@@ -42,18 +42,22 @@ body {
 }
 
 .header-inner h1{
+	font-family: Georgia, serif;
+	color:#fff;
 	font-size: 50px;
 	font-style: italic;
+	padding-top:55px;
+	padding-left:149px;
 }
 
 .tabs{
 	margin:0 auto;
-	width:960px;
+	width:550px;
 }
 
 .navigation{
-	border-top:2px solid #a9c0c7;
-	border-bottom:2px solid #a9c0c7;
+	border-top:3px solid #a9c0c7;
+	border-bottom:3px solid #a9c0c7;
 }
 
 .navigation a{
@@ -62,5 +66,21 @@ body {
 	text-decoration: none;
 	margin:8px 10px;
 	float:left;
+	width:90px;
+	text-align: center;			
 	display:block;
+}
+
+.main-content{
+	width:960px;
+	margin:15px auto;
+	background:#fff;
+	border-radius:3px;
+	padding:15px;
+}
+
+.errormessage{
+	font-size: 28px;
+	font-style: italic;
+	font-weight: bold;
 }

@@ -1,0 +1,8 @@
+<% @queens.each do |q| %>
+	<%= link_to q.name, queen_path(q.id) %>
+<% end %>
+<% if @queens.count < 1 %>
+	<div class="errormessage">No results, you dingus</div>
+	<br />
+	<img src="/images/heidiiswatching.jpg" alt="She's watching"/>
+<% end %>

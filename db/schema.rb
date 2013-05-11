@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130511162110) do
+ActiveRecord::Schema.define(:version => 20130511184636) do
+
+  create_table "queens", :force => true do |t|
+    t.string   "name"
+    t.boolean  "is_winner"
+    t.boolean  "is_allstar"
+    t.text     "bio"
+    t.integer  "season_id"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

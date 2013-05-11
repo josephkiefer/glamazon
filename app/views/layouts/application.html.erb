@@ -9,7 +9,10 @@
 <body>
 <div class="header">
 	<div class="header-inner">
-		<img src="images/rupaulheader.png" alt="RuPaul"><h1>This is the main event, hunties!</h1>
+		<a href="/">
+			<img src="/images/rupaulheader.png" alt="RuPaul">
+		</a>
+		<h1>This is the main event, hunties!</h1>
 		<div class="clearfix"></div>
 	</div>
 	<div class="navigation">
@@ -23,8 +26,8 @@
 		</div>
 	</div>
 </div>
-
-<%= yield %>
-
+<div class="main-content">
+	<%= yield %>
+</div>
 </body>
 </html>

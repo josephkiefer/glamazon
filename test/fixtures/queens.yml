@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  is_winner: false
+  is_allstar: false
+  bio: MyText
+  season_id: 1
+
+two:
+  name: MyString
+  is_winner: false
+  is_allstar: false
+  bio: MyText
+  season_id: 1
