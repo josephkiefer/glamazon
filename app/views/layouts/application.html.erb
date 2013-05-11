@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glamazon</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="header">
+	<div class="header-inner">
+		<img src="images/rupaulheader.png" alt="RuPaul"><h1>This is the main event, hunties!</h1>
+		<div class="clearfix"></div>
+	</div>
+	<div class="navigation">
+		<div class="tabs">
+			<%= link_to "Season 1", "/seasons/1"%>
+			<%= link_to "Season 2", "/seasons/2"%>
+			<%= link_to "Season 3", "/seasons/3"%>
+			<%= link_to "Season 4", "/seasons/4"%>
+			<%= link_to "Season 5", "/seasons/5"%>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+
+<%= yield %>
+
+</body>
+</html>

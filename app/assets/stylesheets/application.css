@@ -1,0 +1,66 @@
+/*
+ *= require_self
+ *= require_tree .
+ */
+* { 
+	margin:0;
+	padding:0;
+}
+
+body {
+	color:#5d5d5d;
+	background:#f2f2f2;
+	font: 13px/1.6em "Helvetica Neue", "Lucida Grande", "Trebuchet MS", sans-serif;
+	height: 100%;
+	line-height:normal;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.clearfix{
+	clear:both;
+}
+
+.header{
+	background:#fb589b;
+}
+	.header img{
+		width: 148px;
+		height: 161px;
+		float:left;
+	}
+
+.header-inner{
+	width:960px;
+	margin:0 auto;
+}
+
+.header-inner h1{
+	font-size: 50px;
+	font-style: italic;
+}
+
+.tabs{
+	margin:0 auto;
+	width:960px;
+}
+
+.navigation{
+	border-top:2px solid #a9c0c7;
+	border-bottom:2px solid #a9c0c7;
+}
+
+.navigation a{
+	color:#fff;
+	font-weight: bold;
+	text-decoration: none;
+	margin:8px 10px;
+	float:left;
+	display:block;
+}
