@@ -7,8 +7,8 @@ class QueensController < ApplicationController
 	end
 	def update
 		@queen = Queen.find(params[:id])
-		@queen.update_attributes(:bio => params[:queen][:bio], :picture => params[:queen][:picture])
+		@queen.update_attributes(params[:queen])
 		@queen.save
-		redirect_to queen_path(@queen.id)
+		render params[:queen][:picture]
 	end
 end
