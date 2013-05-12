@@ -9,6 +9,6 @@ class QueensController < ApplicationController
 		@queen = Queen.find(params[:id])
 		@queen.update_attributes(params[:queen])
 		@queen.save
-		render params[:queen][:picture]
+		redirect_to queen_path(@queen.id)
 	end
 end
