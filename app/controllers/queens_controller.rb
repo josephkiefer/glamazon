@@ -1,6 +1,7 @@
 class QueensController < ApplicationController
 	def show
 		@queen = Queen.find(params[:id])
+		@comment = Comment.new
 	end
 	def edit
 		@queen = Queen.find(params[:id])

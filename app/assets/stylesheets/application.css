@@ -84,3 +84,13 @@ body {
 	font-style: italic;
 	font-weight: bold;
 }
+
+.comments{
+	padding:3px 8px;
+	border-bottom:1px dotted #ccc;
+}
+
+.seasonqueens{
+float: left;
+padding: 30px;
+}

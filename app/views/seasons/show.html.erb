@@ -1,6 +1,9 @@
 <% @queens.each do |q| %>
-	<%= link_to q.name, queen_path(q.id) %>
-	<%= image_tag q.picture.url(:thumb) %>
+	<div class = "seasonqueens">
+		<%= link_to q.name, queen_path(q.id) %>
+		<br />
+		<%= image_tag q.picture.url(:thumb) %>
+	</div>
 <% end %>
 <% if @queens.count < 1 %>
 	<div class="errormessage">No results, you dingus</div>

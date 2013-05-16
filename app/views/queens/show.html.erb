@@ -1,3 +1,11 @@
 <%= image_tag @queen.picture.url(:medium) %>
 <h1><%= @queen.name %></h1>
 <p><%= @queen.bio %></p>
+<%= form_for @comment do |f| %>
+	<%=f.text_area :body %>
+	<%= f.submit "Eat it!" %>
+	<%= f.hidden_field :queen_id, :value => @queen.id %>
+<% end %>
+<% @queen.comments.each do |c| %>
+	<div class="comments"><h3><%= c.body %></h3></div>
+<% end %>
